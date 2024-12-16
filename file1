@@ -1,0 +1,38 @@
+In Python, indentation is crucial for defining code blocks. Here are a few common types of indentation errors: 
+1. IndentationError: expected an indented block 
+
+• This occurs when you forget to indent a block of code that should be indented, such as after an if statement, for loop, or function definition. 
+
+if x > 5:
+print("x is greater than 5") # This line should be indented
+
+2. IndentationError: unexpected indent 
+
+• This happens when you indent a line of code that shouldn't be indented, or when the indentation level is inconsistent with the surrounding code. 
+
+def my_function():
+    print("Hello")
+  print("World") # This line has an unexpected indent
+
+3. IndentationError: unindent does not match any outer indentation level 
+
+• This error occurs when you try to unindent a line of code to a level that doesn't match any previous indentation level. 
+
+for i in range(5):
+    print(i)
+   print("Done") # This line has an invalid unindent
+
+4. TabError: inconsistent use of tabs and spaces in indentation [1]  
+
+• This error arises when you mix tabs and spaces for indentation within the same file. It's best to choose one and stick with it. 
+
+How to Fix: 
+
+• Use a consistent indentation style: Stick to either spaces or tabs, and maintain a consistent number of spaces (typically 4) per indentation level. 
+• Check for missing colons: Ensure that statements that require indented blocks (e.g., if, for, def) end with a colon (:). 
+• Use an IDE or text editor with auto-indentation: This will help you maintain consistent indentation automatically. 
+
+
+Generative AI is experimental.
+
+[1] https://www.analyticsvidhya.com/blog/2024/01/indentation-in-python-with-examples/
